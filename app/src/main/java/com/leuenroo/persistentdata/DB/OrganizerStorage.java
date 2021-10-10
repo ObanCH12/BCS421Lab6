@@ -15,7 +15,7 @@ public class OrganizerStorage {
     private SQLiteDatabase database;
     private MySQLiteHelper dbHelper;
     private String[] allColumns = { MySQLiteHelper.COLUMN_ID,
-            MySQLiteHelper.COLUMN_COMMENT };
+            MySQLiteHelper.COLUMN_COMMENT, MySQLiteHelper.COLUMN_DATE };
 
     public OrganizerStorage(Context context) {
         dbHelper = new MySQLiteHelper(context);

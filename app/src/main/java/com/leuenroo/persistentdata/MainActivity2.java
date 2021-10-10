@@ -20,17 +20,9 @@ public class MainActivity2 extends AppCompatActivity {
         setContentView(R.layout.activity_main2);
         ButterKnife.bind(this);
 
-        mTv2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(MainActivity2.this,FilesActivity.class));
-            }
-        });
+        mTv2.setOnClickListener((View view) -> startActivity(new Intent(MainActivity2.this,FilesActivity.class)));
 
         mTv3.setOnClickListener(this::goToSQL);
-
-
-
     }
 
     private void goToSQL(View view) {
