@@ -30,6 +30,7 @@ public class Note {
     // Will be used by the ArrayAdapter in the ListView
     @Override
     public String toString() {
-        return note;
+        String s = getNote() + "  " + getDate();
+        return s;
     }
 }

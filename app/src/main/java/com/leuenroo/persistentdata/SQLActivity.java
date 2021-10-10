@@ -52,7 +52,7 @@ public class SQLActivity extends ListActivity {
 
 
                 // save the new comment to the database
-                nt = datasource.createComment(mEditText.getText().toString());
+                nt = datasource.createComment(mEditText.getText().toString(), mEditText2.getText().toString());
                 adapter.add(nt);
                 break;
             case R.id.delete:
